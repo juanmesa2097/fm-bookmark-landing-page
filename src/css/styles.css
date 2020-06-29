@@ -95,6 +95,47 @@
   z-index: 1;
 }
 
+.is-tab-visible div:first-child,
+.is-tab-visible div:last-child {
+  animation-timing-function: ease;
+  animation-duration: 1.2s;
+  animation-fill-mode: forwards;
+}
+
+.is-tab-visible div:first-child {
+  animation-name: right-entrance;
+}
+
+.is-tab-visible div:last-child {
+  animation-name: left-entrance;
+}
+
+@keyframes left-entrance {
+  0% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  60% {
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes right-entrance {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  60% {
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .card-content {
   position: relative;
 }
@@ -117,17 +158,20 @@ input.question-input + div {
   opacity: 0;
   z-index: -1;
   position: absolute;
+  max-height: 0;
 }
+
 input.question-input + div p {
-  transform: translateY(-20%);
-  transition: transform ease 400ms;
+  transform: translateY(30%);
+  transition: transform ease 1s;
 }
 
 input.question-input:checked + div {
   opacity: 1;
   z-index: 1;
   position: static !important;
-  transition: opacity ease 800ms;
+  max-height: 100vh;
+  transition: opacity ease 1.5s, max-height linear 1.6s;
 }
 
 input.question-input:checked + div p {
