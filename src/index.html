@@ -523,7 +523,7 @@
           <!-- question end -->
 
           <!-- question -->
-          <div class="w-full border-b border-gray-300">
+          <div class="w-full mb-12 border-b border-gray-300">
             <label
               for="q4"
               class="flex items-center justify-between py-4 text-lg transition-all duration-200 ease-out cursor-pointer text-dark-blue hover:text-soft-red"
@@ -541,13 +541,15 @@
               <p class="leading-8 text-gray-600">
                 Integer condimentum ipsum id imperdiet finibus. Vivamus in
                 placerat mi, at euismod dui. Aliquam vitae neque eget nisl
-                gravida pellentesque non ut velit. More Info 35,000+ already
-                joined Stay up-to-date with what we’re doing Contact Us Features
-                Pricing Contact
+                gravida pellentesque non ut velit.
               </p>
             </div>
           </div>
           <!-- question end -->
+
+          <div class="max-w-screen-xl pb-2 mx-auto">
+            <a href="#" class="btn btn-soft-blue">More info</a>
+          </div>
         </div>
         <!-- row end -->
       </div>
@@ -555,8 +557,52 @@
     </section>
     <!-- section FAQ end -->
 
-    <section class="mt-16 section"></section>
+    <!-- section subscription -->
+    <section class="mt-32 section section-subscription bg-soft-blue">
+      <!-- subscription wrapper -->
+      <div class="max-w-screen-xl px-6 mx-auto my-12">
+        <!-- text container -->
+        <div class="max-w-md mx-auto text-center text-white">
+          <p class="mb-6 text-xs tracking-widest uppercase">
+            35,000+ Already joined
+          </p>
+
+          <h1 class="mb-6 text-white h2">
+            Stay up-to-date with that we're doing
+          </h1>
+
+          <form id="form">
+            <div class="flex items-start justify-between">
+              <div id="emailWrapper" class="w-full mr-4 rounded bg-soft-red">
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email address"
+                  class="w-full px-4 py-2 text-xs text-gray-700 border-2 border-white rounded shadow-md focus:outline-none focus:shadow-outline"
+                />
+                <p
+                  class="hidden px-3 pb-1 text-xs text-left text-white rounded-b bg-soft-red"
+                >
+                  <small>
+                    Whoops, make sure it's an email
+                  </small>
+                </p>
+              </div>
+              <button type="submit" class="px-6 btn btn-soft-red">
+                Contact Us
+              </button>
+            </div>
+          </form>
+        </div>
+        <!-- text container end -->
+      </div>
+      <!-- subscription wrapper end -->
+    </section>
+    <!-- section subscription end -->
+
     <footer>
+      <div class="flex items-center justify-between"></div>
       <p class="attribution">
         Challenge by
         <a

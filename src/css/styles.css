@@ -98,7 +98,7 @@
 .is-tab-visible div:first-child,
 .is-tab-visible div:last-child {
   animation-timing-function: ease;
-  animation-duration: 1.2s;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
 }
 

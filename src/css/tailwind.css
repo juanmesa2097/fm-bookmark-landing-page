@@ -95,6 +95,7 @@ h6,
   @apply tracking-wider;
   @apply shadow-md;
   @apply border-2;
+  @apply whitespace-no-wrap;
   @apply transition-all duration-200 ease-out;
 }
 
@@ -121,7 +122,7 @@ h6,
 }
 
 .btn-soft-red:hover {
-  @apply bg-transparent;
+  @apply bg-white;
   @apply text-soft-red;
 }
 
@@ -132,7 +133,7 @@ h6,
 }
 
 .btn-secondary:hover {
-  @apply bg-transparent;
+  @apply bg-white;
   @apply border-gray-700;
 }
 

@@ -722,6 +722,7 @@ h6,
   letter-spacing: 0.05em;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   border-width: 2px;
+  white-space: nowrap;
   transition-property: all;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
@@ -764,7 +765,9 @@ h6,
 }
 
 .btn-soft-red:hover {
-  background-color: transparent;
+  --bg-opacity: 1;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, var(--bg-opacity));
   --text-opacity: 1;
   color: #fa5757;
   color: rgba(250, 87, 87, var(--text-opacity));
@@ -783,7 +786,9 @@ h6,
 }
 
 .btn-secondary:hover {
-  background-color: transparent;
+  --bg-opacity: 1;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, var(--bg-opacity));
   --border-opacity: 1;
   border-color: #4a5568;
   border-color: rgba(74, 85, 104, var(--border-opacity));
