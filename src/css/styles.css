@@ -112,3 +112,24 @@
   background-position: center;
   background-size: 100%;
 }
+
+input.question-input + div {
+  opacity: 0;
+  z-index: -1;
+  position: absolute;
+}
+input.question-input + div p {
+  transform: translateY(-20%);
+  transition: transform ease 400ms;
+}
+
+input.question-input:checked + div {
+  opacity: 1;
+  z-index: 1;
+  position: static !important;
+  transition: opacity ease 800ms;
+}
+
+input.question-input:checked + div p {
+  transform: translateY(0);
+}
