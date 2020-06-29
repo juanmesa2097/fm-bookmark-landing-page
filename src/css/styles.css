@@ -6,7 +6,7 @@
   transition: all ease 300ms;
 }
 
-#nav.is-open {
+#nav.is-navbar-open {
   opacity: 0.9;
   z-index: 1;
   transform: scale(1) rotate(0);
@@ -15,7 +15,7 @@
 #nav + nav {
   opacity: 1;
 }
-#nav.is-open + nav {
+#nav.is-navbar-open + nav {
   opacity: 0;
 }
 
@@ -28,8 +28,9 @@
 }
 
 /* hero */
-.section-hero {
+.section {
   overflow: hidden;
+  position: relative;
 }
 
 .illustration-container {
@@ -39,15 +40,24 @@
 .illustration-container::after {
   content: "";
   width: 100%;
-  height: 75%;
   background-color: #5368df;
   position: absolute;
   z-index: -1;
   bottom: 0;
 }
 
+.illustration-container-left::after {
+  left: -28%;
+  height: 75%;
+  border-top-right-radius: 180px;
+  border-bottom-right-radius: 180px;
+  border-top-left-radius: 45px;
+  border-bottom-left-radius: 45px;
+}
+
 .illustration-container-right::after {
-  right: -40px;
+  right: -28%;
+  height: 75%;
   border-top-left-radius: 180px;
   border-bottom-left-radius: 180px;
   border-top-right-radius: 45px;
@@ -55,10 +65,32 @@
 }
 
 @media (min-width: 768px) {
-  .illustration-container::after {
-    height: 70%;
+  .illustration-container-left::after {
+    height: 80%;
   }
   .illustration-container-right::after {
-    right: -160px;
+    height: 70%;
   }
+}
+
+.tab-content {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+@media (min-width: 768px) {
+  .tab-image {
+    height: 330px;
+    width: 500px;
+    object-fit: fill;
+    object-position: center;
+    margin: 0 auto;
+  }
+}
+
+.is-tab-visible {
+  opacity: 1;
+  position: static;
+  z-index: 1;
 }

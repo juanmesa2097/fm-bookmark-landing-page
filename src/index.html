@@ -14,11 +14,11 @@
 
     <title>Frontend Mentor | Bookmark landing page</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <link rel="stylesheet" href="../public/build/tailwind.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <!-- mobile navbar -->
     <nav
       id="nav"
       class="fixed top-0 flex flex-col items-center w-full h-full max-w-screen-xl px-6 mx-auto bg-dark-blue md:flex-row md:relative md:bg-transparent md:justify-between"
@@ -87,7 +87,9 @@
         </a>
       </div>
     </nav>
+    <!-- mobile navbar end -->
 
+    <!-- mobile navbar -->
     <nav
       class="flex items-center justify-between max-w-screen-xl px-6 py-8 mx-auto md:hidden"
     >
@@ -102,11 +104,15 @@
         <i class="text-sm im im-menu"></i>
       </button>
     </nav>
+    <!-- mobile navbar end -->
 
-    <section class="mt-10 section-hero">
+    <!-- section hero -->
+    <section class="mt-10 section section-hero">
+      <!-- row -->
       <div
         class="flex flex-wrap items-center justify-center max-w-screen-xl px-6 mx-auto"
       >
+      <!-- column -->
         <div
           class="w-full h-full md:w-1/2 md:order-last illustration-container illustration-container-right"
         >
@@ -115,6 +121,9 @@
             alt="Product presentation in the hero section"
           />
         </div>
+        <!-- column end -->
+
+        <!-- column -->
         <div class="w-full h-full mt-12 text-center md:text-left md:w-1/2">
           <div class="max-w-md mx-auto md:ml-0">
             <h1 class="text-3xl md:text-4xl">A Simple Bookmark Manager</h1>
@@ -131,25 +140,199 @@
             </div>
           </div>
         </div>
+        <!-- column end -->
       </div>
+      <!-- row end -->
     </section>
+    <!-- section hero end -->
 
-    Features Our aim is to make it quick and easy for you to access your
-    favourite websites. Your bookmarks sync between your devices so you can
-    access them on the go. Simple Bookmarking Speedy Searching Easy Sharing
-    Bookmark in one click Organize your bookmarks however you like. Our simple
-    drag-and-drop interface gives you complete control over how you manage your
-    favourite sites. More Info Intelligent search Our powerful search feature
-    will help you find saved sites in no time at all. No need to trawl through
-    all of your bookmarks. More Info Share your bookmarks Easily share your
-    bookmarks and collections with others. Create a shareable link that you can
-    send at the click of a button. More Info Download the extension We’ve got
-    more browsers in the pipeline. Please do let us know if you’ve got a
-    favourite you’d like us to prioritize. Add to Chrome Minimum version 62 Add
-    & Install Extension Add to Firefox Minimum version 55 Add & Install
-    Extension Add to Opera Minimum version 46 Add & Install Extension Frequently
-    Asked Questions Here are some of our FAQs. If you have any other questions
-    you’d like answered please feel free to email us.
+    <!-- section features -->
+    <section class="mt-16 section section-features">
+      <!-- features wrapper -->
+      <div class="max-w-screen-xl px-6 mx-auto">
+        <!-- text container -->
+        <div class="max-w-md mx-auto text-center">
+          <h1 class="h2">Features</h1>
+
+          <p class="mt-4 mb-6">
+            Our aim is to make it quick and easy for you to access your
+            favourite websites. Your bookmarks sync between your devices so you
+            can access them on the go.
+          </p>
+        </div>
+        <!-- text container end -->
+
+        <!-- tabs -->
+        <ul class="flex flex-col justify-center mt-8 mb-20 md:mb-16 md:flex-row">
+          <!-- tab -->
+          <li class="border-t border-b border-gray-300 md:border-t-0">
+            <button
+              class="block py-4 mx-auto font-medium text-gray-700 transition-all duration-300 ease-out border-b-4 border-transparent tab-button border-soft-red focus:outline-none md:px-16"
+              onclick="onClickTab(event, '#firstTabContent')"
+            >
+              Simple Bookmarking
+            </button>
+          </li>
+          <!-- tab end -->
+
+          <!-- tab -->
+          <li class="border-b border-gray-300">
+            <button
+              class="block py-4 mx-auto text-gray-600 transition-all duration-300 ease-out border-b-4 border-transparent tab-button hover:text-soft-red focus:outline-none md:px-16"
+              onclick="onClickTab(event, '#secondTabContent')"
+            >
+              Speedy Searching
+            </button>
+          </li>
+          <!-- tab end -->
+
+          <!-- tab -->
+          <li class="border-b border-gray-300">
+            <button
+              class="block py-4 mx-auto text-gray-600 transition-all duration-300 ease-out border-b-4 border-transparent tab-button hover:text-soft-red focus:outline-none md:px-16"
+              onclick="onClickTab(event, '#thirdTabContent')"
+            >
+              Easy Sharing
+            </button>
+          </li>
+          <!-- tab end -->
+        </ul>
+        <!-- tabs end -->
+
+        <!-- row -->
+        <div id="firstTabContent" class="flex flex-wrap items-center justify-center tab-content is-tab-visible">
+          <!-- column -->
+          <div
+            class="w-full h-full pb-20 md:w-1/2 illustration-container illustration-container-left"
+          >
+            <img
+              src="./assets/images/illustration-features-tab-1.svg"
+              alt="Product presentation in the first tab"
+              class="tab-image"
+            />
+          </div>
+          <!-- column end -->
+
+          <!-- column -->
+          <div class="w-full h-full mt-12 text-center md:text-left md:w-1/2">
+            <!-- text container -->
+            <div class="max-w-md mx-auto md:ml-32">
+              <h2>Bookmark in one click</h1>
+
+              <p class="mt-4 mb-6">
+                Organize your bookmarks however you like. Our simple
+                drag-and-drop interface gives you complete control over how you
+                manage your favourite sites.
+              </p>
+
+              <div class="mb-12">
+                <a href="#" class="mr-1 btn btn-soft-blue">More info</a>
+              </div>
+            </div>
+            <!-- text container -->
+          </div>
+          <!-- column end -->
+        </div>
+        <!-- row end -->
+
+        <!-- row -->
+        <div id="secondTabContent" class="flex flex-wrap items-center justify-center tab-content">
+          <!-- column -->
+          <div
+            class="w-full h-full pb-20 md:w-1/2 illustration-container illustration-container-left"
+          >
+            <img
+              src="./assets/images/illustration-features-tab-2.svg"
+              alt="Product presentation in the second tab"
+              class="tab-image"
+            />
+          </div>
+          <!-- column end -->
+
+          <!-- column -->
+          <div class="w-full h-full mt-12 text-center md:text-left md:w-1/2">
+            <!-- text container -->
+            <div class="max-w-md mx-auto md:ml-32">
+              <h2>Intelligent search</h1>
+
+              <p class="mt-4 mb-6">
+                Our powerful search feature will help you find saved sites in no
+                time at all. No need to trawl through all of your bookmarks.
+              </p>
+
+              <div class="mb-12">
+                <a href="#" class="mr-1 btn btn-soft-blue">More info</a>
+              </div>
+            </div>
+            <!-- text container -->
+          </div>
+          <!-- column end -->
+        </div>
+        <!-- row end -->
+
+        <!-- row -->
+        <div id="thirdTabContent" class="flex flex-wrap items-center justify-center tab-content">
+          <!-- column -->
+          <div
+            class="w-full h-full pb-20 md:w-1/2 illustration-container illustration-container-left"
+          >
+            <img
+              src="./assets/images/illustration-features-tab-3.svg"
+              alt="Product presentation in the third tab"
+              class="tab-image"
+            />
+          </div>
+          <!-- column end -->
+
+          <!-- column -->
+          <div class="w-full h-full mt-12 text-center md:text-left md:w-1/2">
+            <!-- text container -->
+            <div class="max-w-md mx-auto md:ml-32">
+              <h2>Share your bookmarks</h1>
+
+              <p class="mt-4 mb-6">
+                Easily share your bookmarks and collections with others. Create
+                a shareable link that you can send at the click of a button.
+              </p>
+
+              <div class="mb-12">
+                <a href="#" class="mr-1 btn btn-soft-blue">More info</a>
+              </div>
+            </div>
+            <!-- text container -->
+          </div>
+          <!-- column end -->
+        </div>
+        <!-- row end -->
+      </div>
+      <!-- features wrapper -->
+    </section>
+    <!-- section features end -->
+
+    <!-- section browser extension -->
+    <section class="mt-16 section section-browser-extension">
+      <!-- extension wrapper -->
+      <div class="max-w-screen-xl px-6 mx-auto">
+        <!-- text container -->
+        <div class="max-w-md mx-auto text-center">
+          <h1 class="h2">Download the extension</h1>
+
+          <p class="mt-4 mb-6">
+            We’ve got more browsers in the pipeline. Please do let us know if
+            you’ve got a favourite you’d like us to prioritize.
+          </p>
+        </div>
+        <!-- text container end -->
+      </div>
+      <!-- extension wrapper end -->
+    </section>
+    <!-- section browser extension end -->
+
+    Add to Chrome Minimum version 62 Add & Install Extension Add to Firefox
+    Minimum version 55 Add & Install Extension Add to Opera Minimum version 46
+    Add & Install Extension Frequently Asked Questions Here are some of our
+    FAQs. If you have any other questions you’d like answered please feel free
+    to email us.
 
     <!-- Question 1 -->
     What is Bookmark?
