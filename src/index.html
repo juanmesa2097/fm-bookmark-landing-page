@@ -79,11 +79,17 @@
       <div
         class="flex items-center justify-center w-full mt-auto mb-12 md:hidden"
       >
-        <a href="#" class="mx-4">
-          <img src="./assets/images/icon-facebook.svg" alt="Facebook brand" />
+        <a
+          href="#"
+          class="mx-4 text-white transition-all duration-300 ease-out hover:text-soft-red"
+        >
+          <i class="im im-facebook"></i>
         </a>
-        <a href="#" class="mx-4">
-          <img src="./assets/images/icon-twitter.svg" alt="Twitter brand" />
+        <a
+          href="#"
+          class="mx-4 text-white transition-all duration-300 ease-out hover:text-soft-red"
+        >
+          <i class="im im-twitter"></i>
         </a>
       </div>
     </nav>
@@ -152,7 +158,7 @@
       <div class="max-w-screen-xl px-6 mx-auto">
         <!-- text container -->
         <div class="max-w-md mx-auto text-center">
-          <h1 class="h2">Features</h1>
+          <h1 class="text-2xl md:text-3xl">Features</h1>
 
           <p class="mt-4 mb-6">
             Our aim is to make it quick and easy for you to access your
@@ -222,7 +228,7 @@
           <div class="w-full h-full mt-12 text-center md:text-left md:w-1/2">
             <!-- text container -->
             <div class="max-w-md mx-auto md:ml-32">
-              <h2>Bookmark in one click</h2>
+              <h2 class="text-2xl md:text-3xl">Bookmark in one click</h2>
 
               <p class="mt-4 mb-6">
                 Organize your bookmarks however you like. Our simple
@@ -261,7 +267,7 @@
           <div class="w-full h-full mt-12 text-center md:text-left md:w-1/2">
             <!-- text container -->
             <div class="max-w-md mx-auto md:ml-32">
-              <h2>Intelligent search</h2>
+              <h2 class="text-2xl md:text-3xl">Intelligent search</h2>
 
               <p class="mt-4 mb-6">
                 Our powerful search feature will help you find saved sites in no
@@ -299,7 +305,7 @@
           <div class="w-full h-full mt-12 text-center md:text-left md:w-1/2">
             <!-- text container -->
             <div class="max-w-md mx-auto md:ml-32">
-              <h2>Share your bookmarks</h2>
+              <h2 class="text-2xl md:text-3xl">Share your bookmarks</h2>
 
               <p class="mt-4 mb-6">
                 Easily share your bookmarks and collections with others. Create
@@ -326,7 +332,7 @@
       <div class="max-w-screen-xl px-6 mx-auto">
         <!-- text container -->
         <div class="max-w-md mx-auto text-center">
-          <h1 class="h2">Download the extension</h1>
+          <h1 class="text-2xl md:text-3xl">Download the extension</h1>
 
           <p class="mt-4 mb-6">
             We’ve got more browsers in the pipeline. Please do let us know if
@@ -430,7 +436,7 @@
       <div class="max-w-screen-xl px-6 mx-auto">
         <!-- text container -->
         <div class="max-w-md mx-auto text-center">
-          <h1 class="h2">Frequently Asked Questions</h1>
+          <h1 class="text-2xl md:text-3xl">Frequently Asked Questions</h1>
 
           <p class="mt-4 mb-6">
             Here are some of our FAQs. If you have any other questions you’d
@@ -447,7 +453,7 @@
           <div class="w-full border-t border-b border-gray-300">
             <label
               for="q1"
-              class="flex items-center justify-between py-4 text-lg transition-all duration-200 ease-out cursor-pointer text-dark-blue hover:text-soft-red"
+              class="flex items-center justify-between py-4 text-sm transition-all duration-200 ease-out cursor-pointer md:text-lg text-dark-blue hover:text-soft-red"
             >
               What is Bookmark?
               <i class="mr-6 text-sm im im-angle-down text-soft-blue"></i>
@@ -472,7 +478,7 @@
           <div class="w-full border-b border-gray-300">
             <label
               for="q2"
-              class="flex items-center justify-between py-4 text-lg transition-all duration-200 ease-out cursor-pointer text-dark-blue hover:text-soft-red"
+              class="flex items-center justify-between py-4 text-sm transition-all duration-200 ease-out cursor-pointer md:text-lg text-dark-blue hover:text-soft-red"
             >
               How can I request a new browser?
               <i class="mr-6 text-sm im im-angle-down text-soft-blue"></i>
@@ -500,7 +506,7 @@
           <div class="w-full border-b border-gray-300">
             <label
               for="q3"
-              class="flex items-center justify-between py-4 text-lg transition-all duration-200 ease-out cursor-pointer text-dark-blue hover:text-soft-red"
+              class="flex items-center justify-between py-4 text-sm transition-all duration-200 ease-out cursor-pointer md:text-lg text-dark-blue hover:text-soft-red"
             >
               Is there a mobile app?
               <i class="mr-6 text-sm im im-angle-down text-soft-blue"></i>
@@ -526,7 +532,7 @@
           <div class="w-full mb-12 border-b border-gray-300">
             <label
               for="q4"
-              class="flex items-center justify-between py-4 text-lg transition-all duration-200 ease-out cursor-pointer text-dark-blue hover:text-soft-red"
+              class="flex items-center justify-between py-4 text-sm transition-all duration-200 ease-out cursor-pointer md:text-lg text-dark-blue hover:text-soft-red"
             >
               What about other Chromium browsers?
               <i class="mr-6 text-sm im im-angle-down text-soft-blue"></i>
@@ -560,20 +566,28 @@
     <!-- section subscription -->
     <section class="mt-32 section section-subscription bg-soft-blue">
       <!-- subscription wrapper -->
-      <div class="max-w-screen-xl px-6 mx-auto my-12">
+      <div class="max-w-screen-xl px-6 mx-auto mt-16 mb-12">
         <!-- text container -->
         <div class="max-w-md mx-auto text-center text-white">
-          <p class="mb-6 text-xs tracking-widest uppercase">
+          <p
+            class="mb-2 text-xs uppercase md:mb-8"
+            style="letter-spacing: 0.38em;"
+          >
             35,000+ Already joined
           </p>
 
-          <h1 class="mb-6 text-white h2">
-            Stay up-to-date with that we're doing
+          <h1 class="mb-8 text-2xl text-white h2 md:text-3xl">
+            Stay up-to-date with what we're doing
           </h1>
 
+          <!-- form -->
           <form id="form">
-            <div class="flex items-start justify-between">
-              <div id="emailWrapper" class="w-full mr-4 rounded bg-soft-red">
+            <div class="flex flex-col items-start justify-between md:flex-row">
+              <!-- field wrapper -->
+              <div
+                id="emailWrapper"
+                class="w-full mb-4 mr-4 rounded bg-soft-red"
+              >
                 <input
                   type="text"
                   id="email"
@@ -589,11 +603,19 @@
                   </small>
                 </p>
               </div>
-              <button type="submit" class="px-6 btn btn-soft-red">
+              <!-- field wrapper end -->
+
+              <!-- submit button -->
+              <button
+                type="submit"
+                class="block w-full px-6 md:w-auto btn btn-soft-red"
+              >
                 Contact Us
               </button>
+              <!-- submit button end -->
             </div>
           </form>
+          <!-- form end -->
         </div>
         <!-- text container end -->
       </div>
@@ -601,25 +623,93 @@
     </section>
     <!-- section subscription end -->
 
-    <footer>
-      <div class="flex items-center justify-between"></div>
-      <p class="attribution">
+    <!-- footer -->
+    <footer class="bg-dark-blue">
+      <!-- wrapper -->
+      <div
+        class="flex flex-col items-center justify-between max-w-screen-xl px-6 py-12 mx-auto md:py-0 md:flex-row"
+      >
+        <!-- left container -->
+        <div class="flex flex-col items-center md:flex-row">
+          <!-- bookmarks logo -->
+          <a href="./" class="mr-0 md:mr-16">
+            <img
+              src="./assets/images/logo-bookmark-footer.svg"
+              alt="Brand for the application"
+            />
+          </a>
+          <!-- bookmarks logo end -->
+
+          <!-- links -->
+          <ul
+            class="flex flex-col items-center justify-center w-full py-8 tracking-widest uppercase md:w-auto md:flex-row md:text-xs flex-end"
+          >
+            <li
+              class="w-full py-3 text-center text-gray-100 cursor-pointer md:font-medium md:text-grayish-blue md:w-auto md:py-0 md:mt-0 md:border-0 md:mr-10 hover:text-soft-red"
+            >
+              <a href="#">
+                Features
+              </a>
+            </li>
+            <li
+              class="w-full py-3 text-center text-gray-100 cursor-pointer md:font-medium md:text-grayish-blue md:w-auto md:py-0 md:mt-0 md:border-0 md:mr-10 hover:text-soft-red"
+            >
+              <a href="#">
+                Pricing
+              </a>
+            </li>
+            <li
+              class="w-full py-3 mb-5 text-center text-gray-100 cursor-pointer md:font-medium md:text-grayish-blue md:w-auto md:py-0 md:mt-0 md:border-0 md:mb-0 md:mr-10 hover:text-soft-red"
+            >
+              <a href="#">
+                Contact
+              </a>
+            </li>
+          </ul>
+          <!-- links end -->
+        </div>
+        <!-- left container end -->
+
+        <!-- social links -->
+        <div class="flex items-end">
+          <a
+            href="#"
+            class="mr-8 leading-none text-white transition-all duration-300 ease-out hover:text-soft-red"
+          >
+            <i class="im im-facebook"></i>
+          </a>
+          <a
+            href="#"
+            class="leading-none text-white transition-all duration-300 ease-out hover:text-soft-red"
+          >
+            <i class="im im-twitter"></i>
+          </a>
+        </div>
+        <!-- social links end -->
+      </div>
+      <!-- wrapper end -->
+
+      <!-- attribution -->
+      <div class="py-1 text-xs text-center bg-gray-900">
         Challenge by
         <a
           href="https://www.frontendmentor.io?ref=challenge"
           rel="noreferrer"
           target="_blank"
+          class="text-green-300 hover:text-green-400"
           >Frontend Mentor</a
         >. Coded by
         <a
           href="https://github.com/juanmesa2097"
           rel="noreferrer"
           target="_blank"
+          class="text-green-300 hover:text-green-400"
           >juanmesa97</a
         >.
-      </p>
+      </div>
+      <!-- attribution end -->
     </footer>
-
+    <!-- footer end -->
     <script src="./js/index.js"></script>
   </body>
 </html>
